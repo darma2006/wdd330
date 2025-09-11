@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      font-size: 1.2em;
+      padding: 10px 15px;
+      margin: 10px;
+    }
+
+    input[type="number"] {
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="countdown">10</h1>
+
+  <!-- Custom input time -->
+  <input type="number" id="customTime" placeholder="Enter seconds" min="1" />
+
+  <!-- Buttons -->
+  <button id="startButton">Start</button>
+  <button id="pauseResumeButton">Pause</button>
+
+  <!-- Link JavaScript -->
+  <script src="countdown.js"></script>
+
+</body>
+</html>
